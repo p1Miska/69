@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Прибаль</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<section id="loading" class="screen show">
+  <div class="logo small">ПРИБАЛЬ</div>
+  <div>Загрузка…</div>
+  <div class="loading-bar"><div id="loadingFill"></div></div>
+</section>
+
+<section id="title" class="screen">
+  <div class="logo">ПРИБАЛЬ</div>
+  <div class="tagline">Вонючий скунс украл твою прибаль. Поднимись из бункера и верни её.</div>
+  <div id="titleBtns">
+    <button class="btn locked" id="btnLogin">🔒 Войти</button>
+    <button class="btn locked" id="btnBoard">🔒 Лидерборд</button>
+    <button class="btn" id="btnRoadmap">📜 Что будет в 2.0</button>
+  </div>
+  <div id="saveSlots"></div>
+  <div id="ver"></div>
+</section>
+
+<section id="intro" class="screen">
+  <img id="introImg" alt="">
+  <div id="introText"></div>
+  <div id="introHint">тапни, чтобы продолжить</div>
+</section>
+
+<section id="game" class="screen"></section>
+
+<div id="videoOverlay"><video id="shprVideo" playsinline preload="auto"></video></div>
+<div id="fade"></div>
+<div id="modalRoot"></div>
+<div id="toast"></div>
+
+<script src="js/config.js"></script>
+<script src="js/core.js"></script>
+<script src="js/game.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
